@@ -9,14 +9,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-// import storage from 'redux-persist/lib/storage';
 import contactsReducer from 'redux/contactsReducer';
-
-// const contactsPersistConfig = {
-//   key: 'contacts',
-//   storage,
-//   blacklist: ['filter'],
-// };
 
 const middleware = [
   ...getDefaultMiddleware({

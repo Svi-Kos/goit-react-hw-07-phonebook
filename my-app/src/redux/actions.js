@@ -1,7 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
 
-// import shortid from 'shortid';
-
 export const fetchContactRequest = createAction(
   'phonebook/fetchContactRequest',
 );
@@ -21,6 +19,7 @@ export const deleteContactSuccess = createAction(
   'phonebook/deleteContactSuccess',
 );
 export const deleteContactError = createAction('phonebook/deleteContactError');
+
 // export const addContact = (name, number) => dispatch => {
 //   const contact = { name, number };
 
