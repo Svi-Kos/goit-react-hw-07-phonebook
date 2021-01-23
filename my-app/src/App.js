@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
 import * as operations from 'redux/operations';
@@ -8,7 +8,11 @@ import Filter from 'components/Filter/Filter';
 
 function App() {
   const dispatch = useDispatch();
-  dispatch(operations.fetchContacts());
+
+  useEffect(() => {
+    dispatch(operations.fetchContacts());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="phonebook">

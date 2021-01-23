@@ -20,6 +20,8 @@ export const deleteContactSuccess = createAction(
 );
 export const deleteContactError = createAction('phonebook/deleteContactError');
 
+export const changeFilter = createAction('phonebook/changeFilter');
+
 // export const addContact = (name, number) => dispatch => {
 //   const contact = { name, number };
 
@@ -47,5 +49,3 @@ export const deleteContactError = createAction('phonebook/deleteContactError');
 // );
 
 // export const deleteContact = createAction('phonebook/deleteContact');
-
-export const changeFilter = createAction('phonebook/changeFilter');
